@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	   	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="author" content="Prateek Parkash/>
+	    <meta name="description" content="Portfolio website for Prateek Parkash. Contains details about projects and resume."/>
+
+        <title> Prateek Parkash </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">	
+		</script>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+ 		</script>
+  
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+    <style>
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+</style>
+
+
+<style>
+	.navbar {
+    margin-bottom: 0;
+    background-color: #B5C4CC;
+    z-index: 9999;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #000000 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #CC0033 !important;
+    background-color: #F5F5F5 !important;
+
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #DFDAD6 !important;
+}
+</style>
+
+<style>
+	.panel {
+    border: 1px solid #f4511e; 
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px ;
+    color: #DFDAD6;
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}
+</style>
+<style>
+	.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+</style>   
+<style>
+.jumbotron { 
+    background-color: #F5F5F5; /* Orange */
+    color: #DFDAD6;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+</style>
+
+<style>
+.bg-grey {
+    background-color: #f6f6f6;
+}
+</style>
+
+<style>
+.jumbotron {
+    background-color: #F5F5F5;
+    color: #17202A;
+    padding: 40px 5px;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+
+</style>
+<style>.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+
+.logo {
+    color:#DFDAD6;
+    font-size: 200px;
+}</style>
+<style>
+.logo {
+    font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+
+</style>
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    	<div class="jumbotron">
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+     <img src="dp.jpeg" class="img-circle" alt="Me" height="250px">
+    </div>
+    <div class="col-sm-8 align-middle text-center" ><h3>
+Welcome to my home-page. It contains details about my projects, interests and resume. </h3>
+    </div>
+
+   
+  </div>
+</div>
+
+</div>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-9">
+      <p>I am a graduate in Industrial Engineering from <a target="_blank" href="http://www.iitd.ac.in/"> Indian Institute of Technology, Delhi.</a> I am based out of Bengaluru currently working in a B2B E-commerce start-up, <a target="_blank" href="https://udaan.com/">Udaan</a> taking care of Data Analytics, Network & Operations Planning for country wide Supply Chain.</p>
+
+      <p>Although my bachelors was in Industrial Engineering, I was always intrigued by the power of technology in every domain of business. After my bachelors I worked in the multiple industries namely <a target="_blank" href="http://www.lucideus.com/">IT-Security</a>, Crypto Trading, <a target="_blank" href="https://udaan.com/">Logistics & E-commerce</a> to learn from wide variety of Data Analytics Problems.</p>
+
+      <p>On the personal side, I am a long distance runner and competed my <a target="_blank" href="https://tatamumbaimarathon.procamrunning.in/">first full marathon</a>  in 2018. I am a huge dog lover & try to feel like Superman occasionally during stray dogs rescue operations by NGOs. I also like watching suspense/thriller movies and TV shows and like listening to old indian melodies. </p>
+    </div>
+
+    <div class="col-sm-3">
+    	<img src="ab.jpg" height="200px" width="300px">
+    </div>
+  </div>
+</div>
+
+
+<div id="services" class="container-fluid text-center">
+  <h2>Technologies I work on</h2>
+
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>R</h4>
+      <p>Machine Learning & Data Analytics</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>RShiny</h4>
+      <p>Data Dashboarding</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>Hive QL</h4>
+      <p>Data Warehousing</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>HTML/ CSS/ Bootstrap</h4>
+      <p>Frontend Development</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>Javascript</h4>
+      <p>Backend Development</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>MongoDB</h4>
+      <p>NoSQL</p>
+    </div>
+  </div>
+  <br><br><br>
+  <h4>Technologies Loading...</h4>
+ <div class="row">
+    <div class="col-sm-4">
+      <h4>React/ Redux</h4>
+      <p>Native App Development</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>NodeJS</h4>
+      <p>REST API Development</p>
+    </div>
+    <div class="col-sm-4">
+      <h4>Git</h4>
+      <p>Version Control</p>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT ME</h2><br>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Would love to hear your thoughts or suggestions</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Bangalore, IN</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 999-0864-600</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> prateekparkash1@gmail.com</p> 
+      <p>
+      	<a target="_blank" href="https://www.linkedin.com/in/prateek-parkash-437a7b8a/"><i class="fa fa-linkedin-square" style="font-size:40px;padding: 3px"></i></a>
+      	<a target="_blank" href="https://github.com/prateekparkash1"><i class="fa fa-github" style="font-size:40px;padding: 3px ;color: #000000"></i></a>
+
+      	<a target="_blank" href="https://www.facebook.com/prateek.parkash"><i class="fa fa-facebook" style="font-size:35px;padding: 3px"></i></a>
+      	<a target="_blank" href="https://mail.google.com/mail/u/1/?tab=wm#inbox?compose=new"><i class="fa fa-google" style="font-size:35px; padding: 3px"></i></a>
+
+      </p> 
+
+
+
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Message..." rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+     
+      <a class="navbar-brand" href="#"> Prateek Parkash </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Technology</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href ="Prateek_Parkash.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Add Google Maps -->
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(12.9081,77.6476),
+    zoom:10,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
+
+
+
+
+    </body>
+</html>
